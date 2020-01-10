@@ -3,7 +3,7 @@
 
 Name:             jboss-specs-parent
 Version:          1.0.0
-Release:          0.6%{namedreltag}%{dist}
+Release:          0.7%{namedreltag}%{dist}
 Summary:          JBoss Specification API Parent POM
 Group:            Development/Libraries
 # The license is not included because it's not a part of this tag. License file
@@ -44,6 +44,9 @@ install -pm 644 pom.xml $RPM_BUILD_ROOT%{_mavenpomdir}/JPP.jboss-%{name}.pom
 %{_mavendepmapfragdir}/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0.0-0.7.Beta2
+- Mass rebuild 2013-12-27
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.0-0.6.Beta2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
