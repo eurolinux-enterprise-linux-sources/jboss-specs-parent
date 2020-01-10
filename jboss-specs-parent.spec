@@ -3,7 +3,7 @@
 
 Name:             jboss-specs-parent
 Version:          1.0.0
-Release:          0.7%{namedreltag}%{dist}
+Release:          0.8%{namedreltag}%{?dist}
 Summary:          JBoss Specification API Parent POM
 Group:            Development/Libraries
 # The license is not included because it's not a part of this tag. License file
@@ -44,6 +44,9 @@ install -pm 644 pom.xml $RPM_BUILD_ROOT%{_mavenpomdir}/JPP.jboss-%{name}.pom
 %{_mavendepmapfragdir}/*
 
 %changelog
+* Tue Jul 14 2015 Ade Lee <alee@redhat.com> - 1.0.0-0.8.Beta2
+- Resolves: rhbz1134044 - Spec file issues around dist tag
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0.0-0.7.Beta2
 - Mass rebuild 2013-12-27
 
